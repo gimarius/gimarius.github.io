@@ -36,128 +36,117 @@
         </ul>
     </nav>
 
-				<!-- Banner -->
-				<!-- Note: The "styleN" class below should match that of the header element. -->
-					<section id="banner" class="style2">
-						<div class="inner">
-							<span class="image">
-								<img src="images/pic07.jpg" alt="" />
-							</span>
-							<header class="major">
-								<h1>Landing</h1>
-							</header>
-							<div class="content">
-								<p>Lorem ipsum dolor sit amet nullam consequat<br />
-								sed veroeros. tempus adipiscing nulla.</p>
-							</div>
-						</div>
-					</section>
+    <!-- Banner -->
+    <!-- Note: The "styleN" class below should match that of the header element. -->
+    <section id="banner">
+        <div class="inner">
+			<span class="image">
+				<img src="images/pic15_financial_data.jpg" alt=""/>
+			</span>
+            <header class="major">
+                <h1>Financial Data Scraper</h1>
+            </header>
+            <div class="content">
+                <p>Financial data scraper - multiple web resources</p>
+                <p>#Python #Crawler #Selenium #BeautifulSoup #API #Pandas #Automation</p>
+            </div>
+        </div>
+    </section>
 
-				<!-- Main -->
-					<div id="main">
+    <!-- Main -->
+    <div id="main">
+        <!-- One -->
+        <section id="one">
+            <div class="inner">
+                <header class="major">
+                    <h2>Project - in Progress</h2>
+                </header>
+                <p>I build a web scraper to scrape data from various publicly available webpages. The data I was
+                    interested in were daily prices of investment vehicles. The data was spread over 13 different
+                    websites and included over around 300 investment vehicles. In This project description I describe
+                    how I build the scraper and how I solved problems. Part of the code can be found in this <a
+                            href="https://github.com/gimarius/Financial-Data-Web-Scraper">
+                        Github Repository</a>.
+                </p>
+            </div>
+        </section>
 
-						<!-- One -->
-							<section id="one">
-								<div class="inner">
-									<header class="major">
-										<h2>Sed amet aliquam</h2>
-									</header>
-									<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna.</p>
-								</div>
-							</section>
+        <!-- Two -->
+        <section id="two">
+            <div class="inner">
+                <header class="major">
+                    <h2>Web Scraping Files</h2>
+                </header>
+                <p>As described I scraped diverse webpages. Here I described how I scraped the Websites of Credit
+                    Suisse, SwissFundData and UBS.</p>
+                <h3>Scraper_CS_FX.py</h3>
+                <p>For the data coming from the Credit Suisse Webpage. I needed the data corrected with a specific
+                    exchange rate. I scraped the prices of the investment vehicles from the webpage and used the
+                    <a href="https://pypi.org/project/yahoofinancials/">yahoofinancial API</a> to get the exchange
+                    rates. The file can be accessed here:
+                    <a href="https://github.com/gimarius/Financial-Data-Web-Scraper/blob/main/Scraper_CS_FX.py">File</a>
+                    <span class="image main">
+                    <img alt="" src="images/pic33_Yahoo_Financial_API.JPG"/>
+                </span>
+                <h3>Scraper_SwissFundData.py</h3>
+                <p>
+                    <a href="https://github.com/gimarius/Financial-Data-Web-Scraper/blob/main/Scraper_SwissFundData.py">Github</a>.
+                </p>
+                <h3>Scraper_UBS_AST.py</h3>
+                <p>The Scraper for the UBS data was build with BeautifulSoup.
+                    <a href="https://github.com/gimarius/Financial-Data-Web-Scraper/blob/main/Scraper_UBS_AST.py">Github</a>
+                </p>
+            </div>
+        </section>
 
-<!--						&lt;!&ndash; Two &ndash;&gt;-->
-<!--							<section id="two" class="spotlights">-->
-<!--								<section>-->
-<!--									<a href="generic.html" class="image">-->
-<!--										<img src="images/pic08.jpg" alt="" data-position="center center" />-->
-<!--									</a>-->
-<!--									<div class="content">-->
-<!--										<div class="inner">-->
-<!--											<header class="major">-->
-<!--												<h3>Orci maecenas</h3>-->
-<!--											</header>-->
-<!--											<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>-->
-<!--											<ul class="actions">-->
-<!--												<li><a href="generic.html" class="button">Learn more</a></li>-->
-<!--											</ul>-->
-<!--										</div>-->
-<!--									</div>-->
-<!--								</section>-->
-<!--								<section>-->
-<!--									<a href="generic.html" class="image">-->
-<!--										<img src="images/pic09.jpg" alt="" data-position="top center" />-->
-<!--									</a>-->
-<!--									<div class="content">-->
-<!--										<div class="inner">-->
-<!--											<header class="major">-->
-<!--												<h3>Rhoncus magna</h3>-->
-<!--											</header>-->
-<!--											<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>-->
-<!--											<ul class="actions">-->
-<!--												<li><a href="generic.html" class="button">Learn more</a></li>-->
-<!--											</ul>-->
-<!--										</div>-->
-<!--									</div>-->
-<!--								</section>-->
-<!--								<section>-->
-<!--									<a href="generic.html" class="image">-->
-<!--										<img src="images/pic10.jpg" alt="" data-position="25% 25%" />-->
-<!--									</a>-->
-<!--									<div class="content">-->
-<!--										<div class="inner">-->
-<!--											<header class="major">-->
-<!--												<h3>Sed nunc ligula</h3>-->
-<!--											</header>-->
-<!--											<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>-->
-<!--											<ul class="actions">-->
-<!--												<li><a href="generic.html" class="button">Learn more</a></li>-->
-<!--											</ul>-->
-<!--										</div>-->
-<!--									</div>-->
-<!--								</section>-->
-<!--							</section>-->
+        <!-- TwoTwo -->
+        <section id="two_two">
+            <div class="inner">
+                <header class="major">
+                    <h2>Script Launcher - Scraper.py </h2>
+                </header>
+                <p><a href="https://github.com/gimarius/Financial-Data-Web-Scraper/blob/main/Scraper.py">Github</a>.</p>
+            </div>
+        </section>
 
-<!--						&lt;!&ndash; Three &ndash;&gt;-->
-<!--							<section id="three">-->
-<!--								<div class="inner">-->
-<!--									<header class="major">-->
-<!--										<h2>Massa libero</h2>-->
-<!--									</header>-->
-<!--									<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>-->
-<!--									<ul class="actions">-->
-<!--										<li><a href="generic.html" class="button next">Get Started</a></li>-->
-<!--									</ul>-->
-<!--								</div>-->
-<!--							</section>-->
+        <!-- ThreeThree -->
+        <section id="three_three">
+            <div class="inner">
+                <header class="major">
+                    <h2>CSV Collector</h2>
+                </header>
+                <p><a href="https://github.com/gimarius/Financial-Data-Web-Scraper/blob/main/CSV_Collector.py">Github</a>.
+                </p>
+            </div>
+        </section>
 
-<!--					</div>-->
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="inner">
+                <ul class="icons">
+                    <li><a href="https://github.com/gimarius" class="icon brands alt fa-github"><span class="label">GitHub</span></a>
+                    </li>
+                    <li><a href="https://linkedin.com/in/marius-gisler-130633129"
+                           class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                </ul>
+                <ul class="copyright">
+                    <li>&copy; Untitled</li>
+                    <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </div>
+        </footer>
 
+    </div>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">
-            <ul class="icons">
-                <li><a href="https://github.com/gimarius" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-                <li><a href="https://linkedin.com/in/marius-gisler-130633129" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-            </ul>
-							<ul class="copyright">
-								<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</footer>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
 
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-			</div>
-	</body>
+</div>
+</body>
 </html>
