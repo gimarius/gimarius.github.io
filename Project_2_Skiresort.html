@@ -214,16 +214,32 @@
                 </p>
                 <h3>Bar Chart with Plotly Express - Bar</h3>
                 <p>First I created a new dataframe, by grouping the data with pandas groupby-function. Then I plotted
-                    the data to create a grouped bar chart. I </p>
+                    the data to create a grouped bar chart. Most of the ski resorts are located in the canton of Bern,
+                    however, most ski resorts in the canton, have their highest point below 2000 meters. The most
+                    ski resorts above 2000 meters are located in the canton of Wallis and Graubünden. In 13 of 24
+                    cantons,
+                    ski resorts are located below 2000 meters.</p>
 
                 <iframe src='Graphs/Bar_Plot_Höhe.html' height="600" width="100%"></iframe>
 
+                <div class="row">
+                    <div class="col-6 col-12-small">
+                        <h3>Bar Chart with Plotly Express - Pie</h3>
+                        <p>After the creation of the bar chart I plotted this pie chart. The pie chart that nearly three
+                            quarters of all Swiss ski resorts have their highest point below 2000 meters.</p>
+                    </div>
+                    <div class="col-6 col-12-small">
+                        <iframe src='Graphs/Pie_Chart.html' height="600" width="100%"></iframe>
+                    </div>
+                </div>
+
+
                 <h3>Map with Plotly Express - Scatter Geo</h3>
                 <p>Firstly, I created a map with the px.scatter_geo function. This is a function for a Geo Maps,
-                            which is used to create
-                            outline-based maps. I used the latitude and the longitude as I did it with the second
-                            PowerBI Map. I set the geo_scope to "Europe" and let the
-                            map focus on the point on the map. However, I was not satisfied with the result.</p>
+                    which is used to create
+                    outline-based maps. I used the latitude and the longitude as I did it with the second
+                    PowerBI Map. I set the geo_scope to "Europe" and let the
+                    map focus on the point on the map. However, I was not satisfied with the result.</p>
 
                 <div class="row">
                     <div class="col-6 col-12-small">
@@ -234,29 +250,29 @@
                     <div class="col-6 col-12-small">
                         <h3>Resorts above 2000 Meter</h3>
 
-                        <iframe src='Graphs/Map_Switzerland_Above_Standard.html' height="800" width="100%"></iframe>
+                        <iframe src='Graphs/Map_Switzerland_Above_Standard.html' height="600" width="100%"></iframe>
 
                     </div>
                 </div>
                 <h3>Map with Plotly Express - Scatter Mapbox</h3>
                 <p>Secondly, I created a map with the px.scatter_mapbox function. The Mapbox maps are tile-based
-                            maps.
-                            I used the same approach with the longitude and latitude as the locations on the map. The
-                            mapbox_style is set to"Carto-positron".
-                            I used the style since it fitted the most and I did not have to get a Mapbox Access token.</p>
+                    maps.
+                    I used the same approach with the longitude and latitude as the locations on the map. The
+                    mapbox_style is set to"Carto-positron".
+                    I used the style since it fitted the most and I did not have to get a Mapbox Access token.</p>
 
-                    <div class="row">
+                <div class="row">
                     <div class="col-6 col-12-small">
                         <h3>All resorts</h3>
-                        <iframe src='Graphs/Map_Switzerland_nice.html' height="800" width="100%"></iframe>
+                        <iframe src='Graphs/Map_Switzerland_scatter_mapbox.html' height="600" width="100%"></iframe>
 
                     </div>
-                        <div class="col-6 col-12-small">
-                            <h3>Resorts above 2000 Meter</h3>
+                    <div class="col-6 col-12-small">
+                        <h3>Resorts above 2000 Meter</h3>
 
-                            <iframe src='Graphs/Map_Switzerland_nice_above.html' height="800" width="100%"></iframe>
+                        <iframe src='Graphs/Map_Switzerland_scatter_mapbox_above.html' height="600"
+                                width="100%"></iframe>
 
-                        </div>
                     </div>
                 </div>
             </div>
