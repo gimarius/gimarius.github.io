@@ -98,9 +98,7 @@
                     highest
                     altitude, the total length of the slopes (divided in black, red, blue), the number of ski lifts and
                     the
-                    price of a ski pass in Swiss Francs and Euro.
-                </p>
-                <p>I crawled the data with this <a href="https://github.com/gimarius/
+                    price of a ski pass in Swiss Francs and Euro. I crawled the data with this <a href="https://github.com/gimarius/
                 Swiss-Ski-Resorts/blob/main/Data_Collection/Crawler_Skiresort_ch.py">crawler on Github</a>. The crawler
                     is
                     build with selenium and the data manipulation is done with pandas. The output of the crawler is then
@@ -112,15 +110,19 @@
 
                 <p>MySwitzerland also provides information about Swiss ski resorts, however, the number of the resorts
                     is
-                    smaller. I crawled the data from MySwitzerland too and used the same tools. The code can be found
+                    smaller. I crawled the data from MySwitzerland too and used the same tools. The code can be found <a
+                            href="https://github.com/gimarius/Swiss-Ski-Resorts/blob/main/Data_Collection/Crawler_MySwitzerland.py">here
+                        on Github</a>
 
 
                 <h3>Bergfex.ch</h3>
 
                 <p>Since I was not very happy with the result from Skiresorts.ch and MySwitzerland, especially in terms
-                    of displaying the current conditions, for example snowfall overnight. I crawled the page Bergfex.ch
-                    too, here
-                    I focused on this <a href="https://www.bergfex.ch/schweiz/schneewerte/">page</a>.</p>
+                    of displaying the current conditions, for example snowfall overnight. I crawled a page from <a
+                            href="https://www.bergfex.ch/schweiz/schneewerte/">Bergfex.ch</a>
+                    too. The code can be found <a
+                            href="https://github.com/gimarius/Swiss-Ski-Resorts/blob/main/Data_Collection/Crawler_Bergfex_ch.py">here
+                        on Github</a>
                 </p>
             </div>
 
@@ -227,6 +229,8 @@
                         <h3>Bar Chart with Plotly Express - Pie</h3>
                         <p>After the creation of the bar chart I plotted this pie chart. The pie chart that nearly three
                             quarters of all Swiss ski resorts have their highest point below 2000 meters.</p>
+                        <p>Click on the map legend to adjust the data points. Hovering over the datapoints the
+                            number of ski resorts per canton is displayed.</p>
                     </div>
                     <div class="col-6 col-12-small">
                         <iframe src='Graphs/Pie_Chart.html' height="600" width="100%"></iframe>
@@ -235,42 +239,45 @@
 
 
                 <h3>Map with Plotly Express - Scatter Geo</h3>
-                <p>Firstly, I created a map with the px.scatter_geo function. This is a function for a Geo Maps,
-                    which is used to create
-                    outline-based maps. I used the latitude and the longitude as I did it with the second
-                    PowerBI Map. I set the geo_scope to "Europe" and let the
-                    map focus on the point on the map. However, I was not satisfied with the result.</p>
+
 
                 <div class="row">
                     <div class="col-6 col-12-small">
-                        <h3>All resorts</h3>
-                        <iframe src='Graphs/Map_Switzerland_Standard.html' height="600" width="100%"></iframe>
+                        <p>Firstly, I created a map with the px.scatter_geo function. This is a function for a Geo Maps,
+                            which is used to create
+                            outline-based maps. I used the latitude and the longitude as I did it with the second
+                            PowerBI Map. I set the geo_scope to "Europe" and let the
+                            map focus on the point on the map. However, I was not satisfied with the result, since the
+                            map provides too little details.</p>
+                        <p>Click on the map legend to adjust the data points. Hovering over the datapoints the
+                            corresponding ski resort is displayed.</p>
 
                     </div>
                     <div class="col-6 col-12-small">
-                        <h3>Resorts above 2000 Meter</h3>
 
-                        <iframe src='Graphs/Map_Switzerland_Above_Standard.html' height="600" width="100%"></iframe>
+                        <iframe src='Graphs/Map_Switzerland_Standard.html' height="600" width="100%"></iframe>
 
                     </div>
                 </div>
                 <h3>Map with Plotly Express - Scatter Mapbox</h3>
-                <p>Secondly, I created a map with the px.scatter_mapbox function. The Mapbox maps are tile-based
-                    maps.
-                    I used the same approach with the longitude and latitude as the locations on the map. The
-                    mapbox_style is set to"Carto-positron".
-                    I used the style since it fitted the most and I did not have to get a Mapbox Access token.</p>
+
 
                 <div class="row">
                     <div class="col-6 col-12-small">
-                        <h3>All resorts</h3>
-                        <iframe src='Graphs/Map_Switzerland_scatter_mapbox.html' height="600" width="100%"></iframe>
+
+                        <p>Secondly, I created a map with the px.scatter_mapbox function. The Mapbox maps are tile-based
+                            maps.
+                            I used the same approach with the longitude and latitude as the locations on the map. The
+                            mapbox_style is set to"Carto-positron".
+                            I used the style since it fitted the most and I did not have to get a Mapbox Access
+                            token.</p>
+                        <p>Click on the map legend to adjust the data points. Hovering over the datapoints the
+                            corresponding ski resort is displayed.</p>
 
                     </div>
                     <div class="col-6 col-12-small">
-                        <h3>Resorts above 2000 Meter</h3>
 
-                        <iframe src='Graphs/Map_Switzerland_scatter_mapbox_above.html' height="600"
+                        <iframe src='Graphs/Map_Switzerland_scatter_mapbox.html' height="600"
                                 width="100%"></iframe>
 
                     </div>
@@ -285,7 +292,7 @@
                 <header class="major">
                     <h2>More to come</h2>
                 </header>
-                <p></p>
+                <p>I am currently working on integrating more data into the maps. Stay tuned.</p>
             </div>
         </section>
 
