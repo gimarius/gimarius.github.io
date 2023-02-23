@@ -208,6 +208,7 @@
         </div>
     </section>
 
+
     <!-- Threethree -->
     <section id="threethree">
         <div class="inner">
@@ -215,12 +216,62 @@
                 <h2>Data Analysis in Python</h2>
             </header>
 
+
             <p>As I love working with Python and its handy and effective functions, I visualised the data with it.
                 The code can be found <a
                         href="https://github.com/gimarius/Swiss-Ski-Resorts/blob/main/Data_Visualisation/Plotly_Analysis.ipynb">here</a>.
             </p>
-            <h3>Bar Chart with Plotly Express - Bar</h3>
-            <p>First I created a new dataframe, by grouping the data with pandas groupby-function. Then I plotted
+            <!-- Price Analysis Topic -->
+            <h3>Price Analysis</h3>
+            <p>I wanted to gain insights about the ticket pricing of the Swiss ski resorts. Moreover, I wanted to check,
+                if there are any correlations with other parameters. To start off I had to drop all ski resorts which I
+                did not have any pricing data, so I ended up with dropping 61 ski resorts. </p>
+
+
+            <div class="row">
+                <div class="col-6 col-12-small">
+                    <h4>Correlation Matrix</h4>
+                    <p>To kick of I created a correlation matrix and displayed it with the library seaborn. On the
+                        matrix one can see, tha the <strong>altitude difference</strong> has the highest correlation
+                        with the variable price. The number of ski lifts or the total kilometer of slopes has a lower
+                        correlation. In the following analysis I set the focus on the variable "altitude difference".
+                    </p>
+                    <span class="image main">
+                        <img alt="" src="Graphs/Correlation_Matrix_Heatmap.png" width="100%"/>
+                    </span>
+
+                </div>
+                <div class="col-6 col-12-small">
+                    <h4>Scatter Plot with linear regression</h4>
+                    <p>I wanted to plot the variables on a scatter plot. And put a regression line in the plot. The
+                        regression line is a linear model with the method ordinary least squares. The
+                        r-squared value above 0.7 indicates a high level of correlation. A high number of difference in
+                        altitude can lead to a high ski-ticket price. Hovering over the red regression line additional
+                        information is displayed.</p>
+                    <iframe src="Graphs/Scatter_price_altitude_difference.html" height="650" width="100%"/>
+                    </iframe>
+
+                </div>
+            </div>
+
+            <h4>Where are the best slope kilometre to price ski resorts?</h4>
+            <p>I was wondering where can I get the most of my ticket price in terms of total slope km. So I create the
+                <strong>ratio total_slope_km divided by ticket_price</strong>. Again I plotted it on a scatter plot. The
+                size and the colors of the points on the graph displays the ratio. The analysis shows, that the
+                <strong>skiresort Les Portes du Soleil</strong> has the best kilometer to ski ticket price
+                ratio. Hovering over the datapoints additional information is displayed.</p>
+            <iframe src="Graphs/scatter_price_ratio.html" height="650" width="100%"/>
+            </iframe>
+
+
+            <!-- 2000 Meter Topic -->
+
+
+            <h3>Analysis threshold of 2000 meters above sea level</h3>
+            <h4>Bar Chart with Plotly Express - Bar</h4>
+            <p>After the price analysis I wanted to look into the altitude levels. Firstly I created a new
+                dataframe, by
+                grouping the data with pandas groupby-function. Then I plotted
                 the data to create a grouped bar chart. Most of the ski resorts are located in the canton of Bern,
                 however, most ski resorts in the canton, have their highest point below 2000 meters. The most
                 ski resorts above 2000 meters are located in the canton of Wallis and Graubünden. In 13 of 24
@@ -231,7 +282,7 @@
 
             <div class="row">
                 <div class="col-6 col-12-small">
-                    <h3>Bar Chart with Plotly Express - Pie</h3>
+                    <h4>Bar Chart with Plotly Express - Pie</h4>
                     <p>After the creation of the bar chart I plotted this pie chart. The pie chart that nearly three
                         quarters of all Swiss ski resorts have their highest point below 2000 meters.</p>
                     <p>Click on the map legend to adjust the data points. Hovering over the datapoints the
@@ -243,7 +294,7 @@
             </div>
 
 
-            <h3>Map with Plotly Express - Scatter Geo</h3>
+            <h4>Map with Plotly Express - Scatter Geo</h4>
 
 
             <div class="row">
@@ -264,7 +315,7 @@
 
                 </div>
             </div>
-            <h3>Map with Plotly Express - Scatter Mapbox</h3>
+            <h4>Map with Plotly Express - Scatter Mapbox</h4>
 
 
             <div class="row">
@@ -295,7 +346,7 @@
     <section id="four">
         <div class="inner">
             <header class="major">
-                <h2>More to come</h2>
+                <h3>More to come</h3>
             </header>
             <p>I am currently working on integrating more data into the maps. Stay tuned.</p>
         </div>
